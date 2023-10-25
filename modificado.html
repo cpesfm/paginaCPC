@@ -1,0 +1,722 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0041)file:///home/jagura/Downloads/Kardex.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-419" xml:lang="es-419"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./modificado_files/Default.css" type="text/css" rel="stylesheet"><link href="./modificado_files/Default(1).css" type="text/css" rel="stylesheet"><title>
+	Kardex
+</title>	
+    
+	<!--[if IE 5]>
+	<style type="text/css">		
+		.sidebarcontainer td, .sidebarcontainer tr {font-size:smaller;}		
+		#subnav a {height:1em;}
+	    body td, body th {font-size:0.78em;}		
+	</style>
+	<![endif]-->
+	<!--[if IE 7]>
+	<style type="text/css">		        
+       #rightcolumn{margin-right: -152px;}
+	</style>
+	<![endif]-->
+<style type="text/css">
+	.ctl00_mainmenu_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_mainmenu_1 { text-decoration:none; }
+	.ctl00_mainmenu_2 {  }
+	.ctl00_mainmenu_3 { border-style:none; }
+	.ctl00_mainmenu_4 {  }
+	.ctl00_mainmenu_5 { background-color:Transparent; }
+	.ctl00_mainmenu_6 { border-style:none; }
+	.ctl00_mainmenu_7 {  }
+	.ctl00_mainmenu_8 { border-style:none; }
+	.ctl00_mainmenu_9 {  }
+	.ctl00_subMenu_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_subMenu_1 { text-decoration:none; }
+	.ctl00_subMenu_2 { width:24px; }
+	.ctl00_subMenu_3 { border-style:none; }
+	.ctl00_subMenu_4 {  }
+	.ctl00_subMenu_5 { background-color:Transparent;width:150px; }
+	.ctl00_subMenu_6 { color:Silver;border-style:none; }
+	.ctl00_subMenu_7 { border-color:Green;border-style:Solid; }
+	.ctl00_subMenu_8 { background-color:Transparent;border-color:Green;border-style:Solid;width:150px; }
+	.ctl00_subMenu_9 { border-style:none; }
+	.ctl00_subMenu_10 {  }
+	.ctl00_subMenu_11 { color:#FFFFC0;font-weight:bold;border-style:none; }
+	.ctl00_subMenu_12 {  }
+	.ctl00_subMenu_13 { border-style:none; }
+	.ctl00_subMenu_14 {  }
+	.ctl00_subMenu_15 { border-style:none; }
+	.ctl00_subMenu_16 { background-color:White; }
+
+</style></head>
+<body>
+	<form name="aspnetForm" method="post" action="https://www.saes.esfm.ipn.mx/Alumnos/boleta/kardex.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTc2Mzc1MzA0Mw9kFgJmD2QWAgIDD2QWCgIBDw8WAh4ISW1hZ2VVcmwFFX4vSW1hZ2VzL2xvZ29zLzMzLnBuZ2RkAgUPPCsADQIADxYCHgtfIURhdGFCb3VuZGdkDBQrAAIFAzA6MBQrAAIWEB4EVGV4dAUGSW5pY2lvHgVWYWx1ZQUGSW5pY2lvHgtOYXZpZ2F0ZVVybAUNL2RlZmF1bHQuYXNweB4HVG9vbFRpcAUGSW5pY2lvHgdFbmFibGVkZx4KU2VsZWN0YWJsZWceCERhdGFQYXRoBQ0vZGVmYXVsdC5hc3B4HglEYXRhQm91bmRnFCsABgUTMDowLDA6MSwwOjIsMDozLDA6NBQrAAIWEh8DBQdBbHVtbm9zHwlnHghTZWxlY3RlZGcfAgUHQWx1bW5vcx8EBRUvQWx1bW5vcy9kZWZhdWx0LmFzcHgfBmcfB2cfBQUHQWx1bW5vcx8IBRUvYWx1bW5vcy9kZWZhdWx0LmFzcHhkFCsAAhYQHwIFCkFjYWTDqW1pY2EfAwUKQWNhZMOpbWljYR8EBRcvQWNhZGVtaWNhL2RlZmF1bHQuYXNweB8FBQpBY2Fkw6ltaWNhHwZnHwdnHwgFFy9hY2FkZW1pY2EvZGVmYXVsdC5hc3B4HwlnZBQrAAIWEB8CBQpSZWdsYW1lbnRvHwMFClJlZ2xhbWVudG8fBAUYL1JlZ2xhbWVudG8vRGVmYXVsdC5hc3B4HwUFClJlZ2xhbWVudG8fBmcfB2cfCAUYL3JlZ2xhbWVudG8vZGVmYXVsdC5hc3B4HwlnZBQrAAIWEB8CBQVBeXVkYR8DBQVBeXVkYR8EBREvQXl1ZGEvQXl1ZGEuYXNweB8FBQVBeXVkYR8GZx8HZx8IBREvYXl1ZGEvYXl1ZGEuYXNweB8JZ2QUKwACFhAfAgUVUmVjdXBlcmFyIENvbnRyYXNlw7FhHwMFFVJlY3VwZXJhciBDb250cmFzZcOxYR8EBRwvU2VuZEVtYWlsL1JlY3VwZXJhUGFzcy5hc3B4HwUFKlJlY3VwZXJhciBsYSBDb250cmFzZcOxYSBkZSBhY2Nlc28gYWwgU0FFUx8GZx8HZx8IBRwvc2VuZGVtYWlsL3JlY3VwZXJhcGFzcy5hc3B4HwlnZGQCCA9kFgQCAQ8PFgIfAgW4BDxjZW50ZXI+ICAgIDx0YWJsZSB3aWR0aD0nMTAwJSc+ICAgICAgICA8dHI+ICAgICAgICAgICAgPHRkIHJvd3NwYW49JzInIGFsaWduPSdjZW50ZXInPiAgICAgICAgICAgICAgICA8aW1nIHNyYz0nLi4vLi4vSW1hZ2VzL0xvZ29zL1BvbGlfWENILnBuZycgYWx0PSdJUE4nIC8+ICAgICAgICAgICAgPC90ZD4gICAgICAgICAgICA8dGQgYWxpZ249J2NlbnRlcic+ICAgICAgICAgICAgICAgIDxiPkVTQ1VFTEEgU1VQRVJJT1IgREUgRklTSUNBIFkgTUFURU1BVElDQVM8L2I+ICAgICAgICAgICAgPC90ZD4gICAgICAgICAgICA8dGQgcm93c3Bhbj0nMicgYWxpZ249J2NlbnRlcic+ICAgICAgICAgICAgICAgIDxpbWcgc3JjPScuLi8uLi9JbWFnZXMvTG9nb3MvMzMucG5nJyBhbHQ9J0VzY3VlbGEnIEhlaWdodD0nNjAnIFdpZHRoPSc2MCcgLz4gICAgICAgICAgICA8L3RkPiAgICAgICAgPC90cj4gICAgICAgIDx0cj4gICAgICAgICAgICA8dGQgYWxpZ249J2NlbnRlcic+ICAgICAgICAgICAgICAgIDxiPjwvYj4gICAgICAgICAgICA8L3RkPiAgICAgICAgPC90cj4gICAgPC90YWJsZT48L2NlbnRlcj5kZAIDD2QWCgIBDw8WAh8CBdICICAgIDx0YWJsZT4gICAgICAgIDx0cj4gICAgICAgICAgICA8dGQ+ICAgICAgICAgICAgICAgIDxiPkJPTEVUQTogPC9iPiAgICAgICAgICAgIDwvdGQ+ICAgICAgICAgICAgPHRkPiAgICAgICAgICAgICAgICAyMDIxMzMwMTgzICAgICAgICAgICAgPC90ZD4gICAgICAgIDwvdHI+ICAgICAgICA8dHI+ICAgICAgICAgICAgPHRkPiAgICAgICAgICAgICAgICA8Yj5OT01CUkU6IDwvYj4gICAgICAgICAgICA8L3RkPiAgICAgICAgICAgIDx0ZD4gICAgICAgICAgICAgICAgSkFGRVQgQUxFWElTIEdVVElFUlJFWiBSQU5HRUwgICAgICAgICAgICA8L3RkPiAgICAgICAgPC90cj4gICAgPC90YWJsZT5kZAIDDw8WAh8CBShMSUNFTkNJQVRVUkEgRU4gTUFURU3DgVRJQ0EgQUxHT1LDjVRNSUNBZGQCBQ8PFgIfAgUCMjBkZAIHDw8WAh8CBQQ2LjExZGQCCw8PFgIfAgW0NjxzdHlsZT4KCQkJICAgICAgICAgICAgICAgICAgdGFibGUuYm90dG9tQm9yZGVye2JhY2tncm91bmQtY29sb3I6V2hpdGVTbW9rZTtmb250LXNpemU6eHgtc21hbGw7dGV4dC1hbGlnbjpjZW50ZXI7Ym9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlO30KCQkJCQkJCSAgdGFibGUuYm90dG9tQm9yZGVyIHRkIHtib3JkZXItYm90dG9tOiAxcHggc29saWQgVEVBTDtwYWRkaW5nOjFweDt9CgkJCQkJCQk8L3N0eWxlPjxjZW50ZXI+PHRhYmxlIHdpZHRoPSIxMDAlIiBjbGFzcz0iYm90dG9tQm9yZGVyIj48dHI+PHRkIGNvbHNwYW49IjYiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBNYXJvb247IGZvbnQtc2l6ZTogeC1zbWFsbDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGNvbG9yOiBXaGl0ZTsgdGV4dC1hbGlnbjogY2VudGVyIj5QUklNRVIgU0VNRVNUUkU8L3RkPjwvdHI+PHRyIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBXaGl0ZVNtb2tlOyBmb250LXNpemU6IHh4LXNtYWxsOyB0ZXh0LWFsaWduOiBjZW50ZXI7IGZvbnQtd2VpZ2h0OiBib2xkOyI+PHRkIFdpZHRoPSIxMHB4Ij5DbGF2ZTwvdGQ+PHRkIFdpZHRoPSIxNTBweCI+TWF0ZXJpYTwvdGQ+PHRkIFdpZHRoPSI0MHB4Ij5GZWNoYTwvdGQ+PHRkIFdpZHRoPSIxMHB4Ij5QZXJpb2RvPC90ZD48dGQgV2lkdGg9IjEwcHgiPkZvcm1hIEV2YWwuPC90ZD48dGQgV2lkdGg9IjEwcHgiPkNhbGlmaWNhY2lvbjwvdGQ+PC90cj48dHI+PHRkPkExMDE8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+SU5UUk9EVUNDScOTTiBBTCBDw4FMQ1VMTzwvdGQ+PHRkPkZlYiAgMiAyMDIxPC90ZD48dGQ+MjEvMTwvdGQ+PHRkPk9SRDwvdGQ+PHRkPjc8L3RkPjwvdHI+PHRyPjx0ZD5BMTAyPC90ZD48dGQgYWxpZ249ImxlZnQiPsOBTEdFQlJBIFNVUEVSSU9SPC90ZD48dGQ+RmViICAyIDIwMjE8L3RkPjx0ZD4yMS8xPC90ZD48dGQ+T1JEPC90ZD48dGQ+NjwvdGQ+PC90cj48dHI+PHRkPkExMDM8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+RlVOREFNRU5UT1MgREUgUFJPR1JBTUFDScOTTjwvdGQ+PHRkPkZlYiAgMiAyMDIxPC90ZD48dGQ+MjEvMTwvdGQ+PHRkPk9SRDwvdGQ+PHRkPjk8L3RkPjwvdHI+PHRyPjx0ZD5BMTA0PC90ZD48dGQgYWxpZ249ImxlZnQiPlBFTlNBTUlFTlRPIE1BVEVNw4FUSUNPPC90ZD48dGQ+RmViICAyIDIwMjE8L3RkPjx0ZD4yMS8xPC90ZD48dGQ+T1JEPC90ZD48dGQ+MTA8L3RkPjwvdHI+PHRyPjx0ZD5BMTA1PC90ZD48dGQgYWxpZ249ImxlZnQiPkdFT01FVFLDjUE8L3RkPjx0ZD5GZWIgIDIgMjAyMTwvdGQ+PHRkPjIxLzE8L3RkPjx0ZD5PUkQ8L3RkPjx0ZD42PC90ZD48L3RyPjx0cj48dGQ+QTEwNjwvdGQ+PHRkIGFsaWduPSJsZWZ0Ij5DT01VTklDQUNJw5NOIEFTRVJUSVZBPC90ZD48dGQ+RmViICAyIDIwMjE8L3RkPjx0ZD4yMS8xPC90ZD48dGQ+T1JEPC90ZD48dGQ+ODwvdGQ+PC90cj48L3RhYmxlPjxiciAvPjwvY2VudGVyPjxzdHlsZT4KCQkJICAgICAgICAgICAgICAgICAgdGFibGUuYm90dG9tQm9yZGVye2JhY2tncm91bmQtY29sb3I6V2hpdGVTbW9rZTtmb250LXNpemU6eHgtc21hbGw7dGV4dC1hbGlnbjpjZW50ZXI7Ym9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlO30KCQkJCQkJCSAgdGFibGUuYm90dG9tQm9yZGVyIHRkIHtib3JkZXItYm90dG9tOiAxcHggc29saWQgVEVBTDtwYWRkaW5nOjFweDt9CgkJCQkJCQk8L3N0eWxlPjxjZW50ZXI+PHRhYmxlIHdpZHRoPSIxMDAlIiBjbGFzcz0iYm90dG9tQm9yZGVyIj48dHI+PHRkIGNvbHNwYW49IjYiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBNYXJvb247IGZvbnQtc2l6ZTogeC1zbWFsbDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGNvbG9yOiBXaGl0ZTsgdGV4dC1hbGlnbjogY2VudGVyIj5TRUdVTkRPIFNFTUVTVFJFPC90ZD48L3RyPjx0ciBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogV2hpdGVTbW9rZTsgZm9udC1zaXplOiB4eC1zbWFsbDsgdGV4dC1hbGlnbjogY2VudGVyOyBmb250LXdlaWdodDogYm9sZDsiPjx0ZCBXaWR0aD0iMTBweCI+Q2xhdmU8L3RkPjx0ZCBXaWR0aD0iMTUwcHgiPk1hdGVyaWE8L3RkPjx0ZCBXaWR0aD0iNDBweCI+RmVjaGE8L3RkPjx0ZCBXaWR0aD0iMTBweCI+UGVyaW9kbzwvdGQ+PHRkIFdpZHRoPSIxMHB4Ij5Gb3JtYSBFdmFsLjwvdGQ+PHRkIFdpZHRoPSIxMHB4Ij5DYWxpZmljYWNpb248L3RkPjwvdHI+PHRyPjx0ZD5BMjAxPC90ZD48dGQgYWxpZ249ImxlZnQiPkPDgUxDVUxPPC90ZD48dGQ+SnVsICA1IDIwMjE8L3RkPjx0ZD4yMS8yPC90ZD48dGQ+RVRTPC90ZD48dGQ+ODwvdGQ+PC90cj48dHI+PHRkPkEyMDI8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+w4FMR0VCUkEgTElORUFMPC90ZD48dGQ+QWdvIDEwIDIwMjE8L3RkPjx0ZD4yMS8yPC90ZD48dGQ+RVRTPC90ZD48dGQ+NjwvdGQ+PC90cj48dHI+PHRkPkEyMDM8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+UEFSQURJR01BUyBERSBQUk9HUkFNQUNJw5NOPC90ZD48dGQ+SnVuIDI5IDIwMjE8L3RkPjx0ZD4yMS8yPC90ZD48dGQ+T1JEPC90ZD48dGQ+NzwvdGQ+PC90cj48dHI+PHRkPkEyMDQ8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+Q09OU1RSVUNDScOTTiBNQVRFTcOBVElDQTwvdGQ+PHRkPkp1biAyOSAyMDIxPC90ZD48dGQ+MjEvMjwvdGQ+PHRkPk9SRDwvdGQ+PHRkPjc8L3RkPjwvdHI+PHRyPjx0ZD5BMjA1PC90ZD48dGQgYWxpZ249ImxlZnQiPlBST0JBQklMSURBRDwvdGQ+PHRkPkp1biAyOSAyMDIxPC90ZD48dGQ+MjEvMjwvdGQ+PHRkPkVYVDwvdGQ+PHRkPjY8L3RkPjwvdHI+PHRyPjx0ZD5BMjA2PC90ZD48dGQgYWxpZ249ImxlZnQiPlJFU09MVUNJw5NOIERFIFBST0JMRU1BUyBDT01QTEVKT1M8L3RkPjx0ZD5KdW4gMjkgMjAyMTwvdGQ+PHRkPjIxLzI8L3RkPjx0ZD5PUkQ8L3RkPjx0ZD42PC90ZD48L3RyPjwvdGFibGU+PGJyIC8+PC9jZW50ZXI+PHN0eWxlPgoJCQkgICAgICAgICAgICAgICAgICB0YWJsZS5ib3R0b21Cb3JkZXJ7YmFja2dyb3VuZC1jb2xvcjpXaGl0ZVNtb2tlO2ZvbnQtc2l6ZTp4eC1zbWFsbDt0ZXh0LWFsaWduOmNlbnRlcjtib3JkZXItY29sbGFwc2U6Y29sbGFwc2U7fQoJCQkJCQkJICB0YWJsZS5ib3R0b21Cb3JkZXIgdGQge2JvcmRlci1ib3R0b206IDFweCBzb2xpZCBURUFMO3BhZGRpbmc6MXB4O30KCQkJCQkJCTwvc3R5bGU+PGNlbnRlcj48dGFibGUgd2lkdGg9IjEwMCUiIGNsYXNzPSJib3R0b21Cb3JkZXIiPjx0cj48dGQgY29sc3Bhbj0iNiIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IE1hcm9vbjsgZm9udC1zaXplOiB4LXNtYWxsOyBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IFdoaXRlOyB0ZXh0LWFsaWduOiBjZW50ZXIiPlRFUkNFUiBTRU1FU1RSRTwvdGQ+PC90cj48dHIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IFdoaXRlU21va2U7IGZvbnQtc2l6ZTogeHgtc21hbGw7IHRleHQtYWxpZ246IGNlbnRlcjsgZm9udC13ZWlnaHQ6IGJvbGQ7Ij48dGQgV2lkdGg9IjEwcHgiPkNsYXZlPC90ZD48dGQgV2lkdGg9IjE1MHB4Ij5NYXRlcmlhPC90ZD48dGQgV2lkdGg9IjQwcHgiPkZlY2hhPC90ZD48dGQgV2lkdGg9IjEwcHgiPlBlcmlvZG88L3RkPjx0ZCBXaWR0aD0iMTBweCI+Rm9ybWEgRXZhbC48L3RkPjx0ZCBXaWR0aD0iMTBweCI+Q2FsaWZpY2FjaW9uPC90ZD48L3RyPjx0cj48dGQ+QTMwMTwvdGQ+PHRkIGFsaWduPSJsZWZ0Ij5Dw4FMQ1VMTyBNVUxUSVZBUklBQkxFPC90ZD48dGQ+RW5lICA3IDIwMjI8L3RkPjx0ZD4yMi8xPC90ZD48dGQ+T1JEPC90ZD48dGQ+OTwvdGQ+PC90cj48dHI+PHRkPkEzMDI8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+w4FMR0VCUkEgTElORUFMIEFWQU5aQURBPC90ZD48dGQ+RW5lICA3IDIwMjI8L3RkPjx0ZD4yMi8xPC90ZD48dGQ+T1JEPC90ZD48dGQ+NzwvdGQ+PC90cj48dHI+PHRkPkEzMDM8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+QU7DgUxJU0lTIERFIEFMR09SSVRNT1M8L3RkPjx0ZD5FbmUgIDcgMjAyMjwvdGQ+PHRkPjIyLzE8L3RkPjx0ZD5PUkQ8L3RkPjx0ZD43PC90ZD48L3RyPjx0cj48dGQ+QTMwNDwvdGQ+PHRkIGFsaWduPSJsZWZ0Ij5URU9Sw41BIERFIEdSw4FGSUNBUzwvdGQ+PHRkPkVuZSAgNyAyMDIyPC90ZD48dGQ+MjIvMTwvdGQ+PHRkPk9SRDwvdGQ+PHRkPjY8L3RkPjwvdHI+PHRyPjx0ZD5BMzA1PC90ZD48dGQgYWxpZ249ImxlZnQiPkVTVEFEw41TVElDQTwvdGQ+PHRkPkp1biAyMyAyMDIyPC90ZD48dGQ+MjIvMjwvdGQ+PHRkPlJFQzwvdGQ+PHRkPjA8L3RkPjwvdHI+PHRyPjx0ZD5BMzA2PC90ZD48dGQgYWxpZ249ImxlZnQiPlRPTUEgREUgREVDSVNJT05FUyBCQVNBREFTIEVOIERBVE9TPC90ZD48dGQ+RW5lICA3IDIwMjI8L3RkPjx0ZD4yMi8xPC90ZD48dGQ+T1JEPC90ZD48dGQ+NjwvdGQ+PC90cj48L3RhYmxlPjxiciAvPjwvY2VudGVyPjxzdHlsZT4KCQkJICAgICAgICAgICAgICAgICAgdGFibGUuYm90dG9tQm9yZGVye2JhY2tncm91bmQtY29sb3I6V2hpdGVTbW9rZTtmb250LXNpemU6eHgtc21hbGw7dGV4dC1hbGlnbjpjZW50ZXI7Ym9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlO30KCQkJCQkJCSAgdGFibGUuYm90dG9tQm9yZGVyIHRkIHtib3JkZXItYm90dG9tOiAxcHggc29saWQgVEVBTDtwYWRkaW5nOjFweDt9CgkJCQkJCQk8L3N0eWxlPjxjZW50ZXI+PHRhYmxlIHdpZHRoPSIxMDAlIiBjbGFzcz0iYm90dG9tQm9yZGVyIj48dHI+PHRkIGNvbHNwYW49IjYiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBNYXJvb247IGZvbnQtc2l6ZTogeC1zbWFsbDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGNvbG9yOiBXaGl0ZTsgdGV4dC1hbGlnbjogY2VudGVyIj5DVUFSVE8gU0VNRVNUUkU8L3RkPjwvdHI+PHRyIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBXaGl0ZVNtb2tlOyBmb250LXNpemU6IHh4LXNtYWxsOyB0ZXh0LWFsaWduOiBjZW50ZXI7IGZvbnQtd2VpZ2h0OiBib2xkOyI+PHRkIFdpZHRoPSIxMHB4Ij5DbGF2ZTwvdGQ+PHRkIFdpZHRoPSIxNTBweCI+TWF0ZXJpYTwvdGQ+PHRkIFdpZHRoPSI0MHB4Ij5GZWNoYTwvdGQ+PHRkIFdpZHRoPSIxMHB4Ij5QZXJpb2RvPC90ZD48dGQgV2lkdGg9IjEwcHgiPkZvcm1hIEV2YWwuPC90ZD48dGQgV2lkdGg9IjEwcHgiPkNhbGlmaWNhY2lvbjwvdGQ+PC90cj48dHI+PHRkPkE0MDE8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+QU7DgUxJU0lTIE1BVEVNw4FUSUNPPC90ZD48dGQ+SnVsIDE0IDIwMjM8L3RkPjx0ZD4yMy8yPC90ZD48dGQ+RVhUPC90ZD48dGQ+NjwvdGQ+PC90cj48dHI+PHRkPkE0MDI8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+VEVPUsONQSBERSBDT05KVU5UT1M8L3RkPjx0ZD5KdW4gMjMgMjAyMjwvdGQ+PHRkPjIyLzI8L3RkPjx0ZD5FWFQ8L3RkPjx0ZD42PC90ZD48L3RyPjx0cj48dGQ+QTQwMzwvdGQ+PHRkIGFsaWduPSJsZWZ0Ij5Nw4lUT0RPUyBOVU3DiVJJQ09TPC90ZD48dGQ+SnVuIDIzIDIwMjI8L3RkPjx0ZD4yMi8yPC90ZD48dGQ+RVhUPC90ZD48dGQ+ODwvdGQ+PC90cj48dHI+PHRkPkE0MDQ8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+RUNVQUNJT05FUyBESU7DgU1JQ0FTPC90ZD48dGQ+SnVsIDE0IDIwMjM8L3RkPjx0ZD4yMy8yPC90ZD48dGQ+UkVDPC90ZD48dGQ+MzwvdGQ+PC90cj48dHI+PHRkPkE0MDU8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+TU9ERUxPUyBFU1RPQ8OBU1RJQ09TPC90ZD48dGQ+SnVsIDE0IDIwMjM8L3RkPjx0ZD4yMy8yPC90ZD48dGQ+T1JEPC90ZD48dGQ+MDwvdGQ+PC90cj48dHI+PHRkPkE0MDY8L3RkPjx0ZCBhbGlnbj0ibGVmdCI+w4lUSUNBIFkgUkVTUE9OU0FCSUxJREFEIFNPQ0lBTDwvdGQ+PHRkPkp1biAyMyAyMDIyPC90ZD48dGQ+MjIvMjwvdGQ+PHRkPkVYVDwvdGQ+PHRkPjY8L3RkPjwvdHI+PC90YWJsZT48YnIgLz48L2NlbnRlcj48c3R5bGU+CgkJCSAgICAgICAgICAgICAgICAgIHRhYmxlLmJvdHRvbUJvcmRlcntiYWNrZ3JvdW5kLWNvbG9yOldoaXRlU21va2U7Zm9udC1zaXplOnh4LXNtYWxsO3RleHQtYWxpZ246Y2VudGVyO2JvcmRlci1jb2xsYXBzZTpjb2xsYXBzZTt9CgkJCQkJCQkgIHRhYmxlLmJvdHRvbUJvcmRlciB0ZCB7Ym9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIFRFQUw7cGFkZGluZzoxcHg7fQoJCQkJCQkJPC9zdHlsZT48Y2VudGVyPjx0YWJsZSB3aWR0aD0iMTAwJSIgY2xhc3M9ImJvdHRvbUJvcmRlciI+PHRyPjx0ZCBjb2xzcGFuPSI2IiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogTWFyb29uOyBmb250LXNpemU6IHgtc21hbGw7IGZvbnQtd2VpZ2h0OiBib2xkOyBjb2xvcjogV2hpdGU7IHRleHQtYWxpZ246IGNlbnRlciI+UVVJTlRPIFNFTUVTVFJFPC90ZD48L3RyPjx0ciBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogV2hpdGVTbW9rZTsgZm9udC1zaXplOiB4eC1zbWFsbDsgdGV4dC1hbGlnbjogY2VudGVyOyBmb250LXdlaWdodDogYm9sZDsiPjx0ZCBXaWR0aD0iMTBweCI+Q2xhdmU8L3RkPjx0ZCBXaWR0aD0iMTUwcHgiPk1hdGVyaWE8L3RkPjx0ZCBXaWR0aD0iNDBweCI+RmVjaGE8L3RkPjx0ZCBXaWR0aD0iMTBweCI+UGVyaW9kbzwvdGQ+PHRkIFdpZHRoPSIxMHB4Ij5Gb3JtYSBFdmFsLjwvdGQ+PHRkIFdpZHRoPSIxMHB4Ij5DYWxpZmljYWNpb248L3RkPjwvdHI+PHRyPjx0ZD5BNTAyPC90ZD48dGQgYWxpZ249ImxlZnQiPsOBTEdFQlJBIEFCU1RSQUNUQTwvdGQ+PHRkPkZlYiAgMSAyMDIzPC90ZD48dGQ+MjMvMTwvdGQ+PHRkPk9SRDwvdGQ+PHRkPjA8L3RkPjwvdHI+PHRyPjx0ZD5BNTAzPC90ZD48dGQgYWxpZ249ImxlZnQiPk9QVElNSVpBQ0nDk048L3RkPjx0ZD5GZWIgIDEgMjAyMzwvdGQ+PHRkPjIzLzE8L3RkPjx0ZD5PUkQ8L3RkPjx0ZD43PC90ZD48L3RyPjx0cj48dGQ+QTUwNDwvdGQ+PHRkIGFsaWduPSJsZWZ0Ij5GVU5EQU1FTlRPUyBERSBJTlRFTElHRU5DSUEgQVJUSUZJQ0lBTDwvdGQ+PHRkPkZlYiAgMSAyMDIzPC90ZD48dGQ+MjMvMTwvdGQ+PHRkPkVYVDwvdGQ+PHRkPjg8L3RkPjwvdHI+PC90YWJsZT48YnIgLz48L2NlbnRlcj5kZAIJDzwrAA0CAA8WAh8BZ2QMFCsADgU2MDowLDA6MSwwOjIsMDozLDA6NCwwOjUsMDo2LDA6NywwOjgsMDo5LDA6MTAsMDoxMSwwOjEyFCsAAhYQHwIFEERhdG9zIFBlcnNvbmFsZXMfAwUQRGF0b3MgUGVyc29uYWxlcx8EBSIvQWx1bW5vcy9pbmZvX2FsdW1ub3MvZGVmYXVsdC5hc3B4HwUFD0RhdG9zIEdlbmVyYWxlcx8GZx8HZx8IBSIvYWx1bW5vcy9pbmZvX2FsdW1ub3MvZGVmYXVsdC5hc3B4HwlnFCsABAULMDowLDA6MSwwOjIUKwACFhAfAgUQRGF0b3MgUGVyc29uYWxlcx8DBRBEYXRvcyBQZXJzb25hbGVzHwQFJy9BbHVtbm9zL2luZm9fYWx1bW5vcy9EYXRvc19BbHVtbm8uYXNweB8FBRVJbmZvcm1hY2nDs24gUGVyc29uYWwfBmcfB2cfCAUnL2FsdW1ub3MvaW5mb19hbHVtbm9zL2RhdG9zX2FsdW1uby5hc3B4HwlnZBQrAAIWEB8CBQ5EYXRvcyBNw6lkaWNvcx8DBQ5EYXRvcyBNw6lkaWNvcx8EBS4vQWx1bW5vcy9pbmZvX2FsdW1ub3MvRGF0b3NBbHVtbm9zTWVkaWNvcy5hc3B4HwUFFUluZm9ybWFjacOzbiBQZXJzb25hbB8GZx8HZx8IBS4vYWx1bW5vcy9pbmZvX2FsdW1ub3MvZGF0b3NhbHVtbm9zbWVkaWNvcy5hc3B4HwlnZBQrAAIWEB8CBRBEYXRvcyBEZXBvcnRpdm9zHwMFEERhdG9zIERlcG9ydGl2b3MfBAUxL0FsdW1ub3MvaW5mb19hbHVtbm9zL0RhdG9zQWx1bW5vc0RlcG9ydGl2b3MuYXNweB8FBRVJbmZvcm1hY2nDs24gUGVyc29uYWwfBmcfB2cfCAUxL2FsdW1ub3MvaW5mb19hbHVtbm9zL2RhdG9zYWx1bW5vc2RlcG9ydGl2b3MuYXNweB8JZ2QUKwACFhAfAgUURG9jdW1lbnRvcyBBZG1pc2nDs24fAwUURG9jdW1lbnRvcyBBZG1pc2nDs24fBAUuL0FsdW1ub3MvaW5mb19hbHVtbm9zL0RvY3VtZW50b3NfQWRtaXNpb24uYXNweB8FBSNEb2N1bWVudG9zIGRlbCBwcm9jZXNvIGRlIGFkbWlzacOzbh8GZx8HZx8IBS4vYWx1bW5vcy9pbmZvX2FsdW1ub3MvZG9jdW1lbnRvc19hZG1pc2lvbi5hc3B4HwlnZBQrAAIWEB8CBQhUcmFtaXRlcx8DBQhUcmFtaXRlcx8EBR4vQWx1bW5vcy9UcmFtaXRlcy9EZWZhdWx0LmFzcHgfBQU6UMOhZ2luYSBwYXJhIHNvbGljaXRhciB0cmFtaXRlcyBwcm9iYXRvcmlvcyBkZSBlc2NvbGFyaWRhZB8GZx8HZx8IBR4vYWx1bW5vcy90cmFtaXRlcy9kZWZhdWx0LmFzcHgfCWcUKwADBQcwOjAsMDoxFCsAAhYQHwIFCVNvbGljaXR1ZB8DBQlTb2xpY2l0dWQfBAUvL0FsdW1ub3MvVHJhbWl0ZXMvU29saWNpdHVkX1RyYW1pdGVfQWx1bW5vLmFzcHgfBQU6UMOhZ2luYSBwYXJhIHNvbGljaXRhciB0cmFtaXRlcyBwcm9iYXRvcmlvcyBkZSBlc2NvbGFyaWRhZB8GZx8HZx8IBS8vYWx1bW5vcy90cmFtaXRlcy9zb2xpY2l0dWRfdHJhbWl0ZV9hbHVtbm8uYXNweB8JZ2QUKwACFhAfAgULU2VndWltaWVudG8fAwULU2VndWltaWVudG8fBAUxL0FsdW1ub3MvVHJhbWl0ZXMvU2VndWltaWVudG9fVHJhbWl0ZV9BbHVtbm8uYXNweB8FBUZQw6FnaW5hIHBhcmEgZGFyIHNlZ3VpbWllbnRvIGEgdHVzIHRyYW1pdGVzIHByb2JhdG9yaW9zIGRlIGVzY29sYXJpZGFkHwZnHwdnHwgFMS9hbHVtbm9zL3RyYW1pdGVzL3NlZ3VpbWllbnRvX3RyYW1pdGVfYWx1bW5vLmFzcHgfCWdkFCsAAhYQHwIFEURhdG9zIGFjYWTDqW1pY29zHwMFEURhdG9zIGFjYWTDqW1pY29zHwQFHC9BbHVtbm9zL2JvbGV0YS9kZWZhdWx0LmFzcHgfBQUiTXVlc3RyYSB0dSBpbmZvcm1hY2nDs24gYWNhZMOpbWljYR8GZx8HZx8IBRwvYWx1bW5vcy9ib2xldGEvZGVmYXVsdC5hc3B4HwlnFCsABQUPMDowLDA6MSwwOjIsMDozFCsAAhYSHwMFB0vDoXJkZXgfCWcfCmcfAgUHS8OhcmRleB8EBRsvQWx1bW5vcy9ib2xldGEva2FyZGV4LmFzcHgfBmcfB2cfBQUUSGlzdG9yaWFsIEFjYWTDqW1pY28fCAUbL2FsdW1ub3MvYm9sZXRhL2thcmRleC5hc3B4ZBQrAAIWEB8CBQ5Fc3RhZG8gR2VuZXJhbB8DBQ5Fc3RhZG8gR2VuZXJhbB8EBSIvQWx1bW5vcy9ib2xldGEvRXN0YWRvX0FsdW1uby5hc3B4HwUFF0luZGljYWRvcmVzIGFjYWTDqW1pY29zHwZnHwdnHwgFIi9hbHVtbm9zL2JvbGV0YS9lc3RhZG9fYWx1bW5vLmFzcHgfCWdkFCsAAhYQHwIFElNvbGljaXR1ZCBEaWN0YW1lbh8DBRJTb2xpY2l0dWQgRGljdGFtZW4fBAUiL0FsdW1ub3MvRGljdGFtZW5lcy9DYW5kaWRhdG8uYXNweB8FBQ9EYXRvcyBnZW5lcmFsZXMfBmcfB2cfCAUiL2FsdW1ub3MvZGljdGFtZW5lcy9jYW5kaWRhdG8uYXNweB8JZ2QUKwACFhAfAgUIRGljdGFtZW4fAwUIRGljdGFtZW4fBAUrL0FsdW1ub3MvRGljdGFtZW5lcy9yZXNwdWVzdGFfZGljdGFtZW4uYXNweB8FBRVJbmZvcm1hY2nDs24gUGVyc29uYWwfBmcfB2cfCAUrL2FsdW1ub3MvZGljdGFtZW5lcy9yZXNwdWVzdGFfZGljdGFtZW4uYXNweB8JZ2QUKwACFhAfAgUTSW5zY3JpcGNpw7NuIEFjdHVhbB8DBRNJbnNjcmlwY2nDs24gQWN0dWFsHwQFKy9BbHVtbm9zL0luZm9ybWFjaW9uX3NlbWVzdHJhbC9kZWZhdWx0LmFzcHgfBQUoSW5mb3JtYWNpb24gZGVsIHBlcmlvZG8gZXNjb2xhciBlbiBjdXJzbx8GZx8HZx8IBSsvYWx1bW5vcy9pbmZvcm1hY2lvbl9zZW1lc3RyYWwvZGVmYXVsdC5hc3B4HwlnFCsAAwUHMDowLDA6MRQrAAIWEB8CBQdIb3JhcmlvHwMFB0hvcmFyaW8fBAUyL0FsdW1ub3MvSW5mb3JtYWNpb25fc2VtZXN0cmFsL0hvcmFyaW9fQWx1bW5vLmFzcHgfBQURSG9yYXJpbyBkZSBDbGFzZXMfBmcfB2cfCAUyL2FsdW1ub3MvaW5mb3JtYWNpb25fc2VtZXN0cmFsL2hvcmFyaW9fYWx1bW5vLmFzcHgfCWdkFCsAAhYQHwIFDkNhbGlmaWNhY2lvbmVzHwMFDkNhbGlmaWNhY2lvbmVzHwQFNi9BbHVtbm9zL0luZm9ybWFjaW9uX3NlbWVzdHJhbC9jYWxpZmljYWNpb25lc19zZW0uYXNweB8FBSVDYWxpZmljYWNpb25lcyBkZSBsb3MgZGVwYXJ0YW1lbnRhbGVzHwZnHwdnHwgFNi9hbHVtbm9zL2luZm9ybWFjaW9uX3NlbWVzdHJhbC9jYWxpZmljYWNpb25lc19zZW0uYXNweB8JZ2QUKwACFhAfAgUPUmVpbnNjcmlwY2lvbmVzHwMFD1JlaW5zY3JpcGNpb25lcx8EBSUvQWx1bW5vcy9SZWluc2NyaXBjaW9uZXMvZGVmYXVsdC5hc3B4HwUFD1JlaW5zY3JpcGNpb25lcx8GZx8HZx8IBSUvYWx1bW5vcy9yZWluc2NyaXBjaW9uZXMvZGVmYXVsdC5hc3B4HwlnFCsABAULMDowLDA6MSwwOjIUKwACFhAfAgUVQ2l0YSBkZSBSZWluc2NyaXBjaW9uHwMFFUNpdGEgZGUgUmVpbnNjcmlwY2lvbh8EBTIvQWx1bW5vcy9SZWluc2NyaXBjaW9uZXMvZmljaGFzX3JlaW5zY3JpcGNpb24uYXNweB8FBRVDaXRhIGRlIFJlaW5zY3JpcGNpb24fBmcfB2cfCAUyL2FsdW1ub3MvcmVpbnNjcmlwY2lvbmVzL2ZpY2hhc19yZWluc2NyaXBjaW9uLmFzcHgfCWdkFCsAAhYQHwIFDVJlaW5zY3JpcGNpb24fAwUNUmVpbnNjcmlwY2lvbh8EBSkvQWx1bW5vcy9SZWluc2NyaXBjaW9uZXMvcmVpbnNjcmliaXIuYXNweB8FBQ1SZWluc2NyaXBjaW9uHwZnHwdnHwgFKS9hbHVtbm9zL3JlaW5zY3JpcGNpb25lcy9yZWluc2NyaWJpci5hc3B4HwlnZBQrAAIWEB8CBQtDb21wcm9iYW50ZR8DBQtDb21wcm9iYW50ZR8EBTEvQWx1bW5vcy9SZWluc2NyaXBjaW9uZXMvQ29tcHJvYmFudGVfSG9yYXJpby5hc3B4HwUFC0NvbXByb2JhbnRlHwZnHwdnHwgFMS9hbHVtbm9zL3JlaW5zY3JpcGNpb25lcy9jb21wcm9iYW50ZV9ob3JhcmlvLmFzcHgfCWdkFCsAAhYQHwIFA0VUUx8DBQNFVFMfBAUZL0FsdW1ub3MvRVRTL2RlZmF1bHQuYXNweB8FBQVFLlQuUx8GZx8HZx8IBRkvYWx1bW5vcy9ldHMvZGVmYXVsdC5hc3B4HwlnFCsAAwUHMDowLDA6MRQrAAIWEB8CBQ1JbnNjcmliaXIgRVRTHwMFDUluc2NyaWJpciBFVFMfBAUhL0FsdW1ub3MvRVRTL2luc2NyaXBjaW9uX2V0cy5hc3B4HwUFDUluc2NyaWJpciBFVFMfBmcfB2cfCAUhL2FsdW1ub3MvZXRzL2luc2NyaXBjaW9uX2V0cy5hc3B4HwlnZBQrAAIWEB8CBQ5DYWxpZmljYWNpb25lcx8DBQ5DYWxpZmljYWNpb25lcx8EBSQvQWx1bW5vcy9FVFMvY2FsaWZpY2FjaW9uZXNfZXRzLmFzcHgfBQUQQ2FsaWZpY2FjaW9uIEVUUx8GZx8HZx8IBSQvYWx1bW5vcy9ldHMvY2FsaWZpY2FjaW9uZXNfZXRzLmFzcHgfCWdkFCsAAhYQHwIFHlNhYmVyZXMgUHJldmlhbWVudGUgQWRxdWlyaWRvcx8DBR5TYWJlcmVzIFByZXZpYW1lbnRlIEFkcXVpcmlkb3MfBAUdL0FsdW1ub3MvU2FiZXJlcy9ERUZBVUxULkFTUFgfBQUeU2FiZXJlcyBQcmV2aWFtZW50ZSBBZHF1aXJpZG9zHwZnHwdnHwgFHS9hbHVtbm9zL3NhYmVyZXMvZGVmYXVsdC5hc3B4HwlnFCsAAwUHMDowLDA6MRQrAAIWEB8CBShJbnNjcmliaXIgU2FiZXJlcyBQcmV2aWFtZW50ZSBBZHF1aXJpZG9zHwMFKEluc2NyaWJpciBTYWJlcmVzIFByZXZpYW1lbnRlIEFkcXVpcmlkb3MfBAUpL0FsdW1ub3MvU2FiZXJlcy9JbnNjcmlwY2lvbl9TYWJlcmVzLmFzcHgfBQUoSW5zY3JpYmlyIFNhYmVyZXMgUHJldmlhbWVudGUgQWRxdWlyaWRvcx8GZx8HZx8IBSkvYWx1bW5vcy9zYWJlcmVzL2luc2NyaXBjaW9uX3NhYmVyZXMuYXNweB8JZ2QUKwACFhAfAgUOQ2FsaWZpY2FjaW9uZXMfAwUOQ2FsaWZpY2FjaW9uZXMfBAUsL0FsdW1ub3MvU2FiZXJlcy9jYWxpZmljYWNpb25lc19zYWJlcmVzLmFzcHgfBQUtQ2FsaWZpY2FjaW9uZXMgU2FiZXJlcyBQcmV2aWFtZW50ZSBBZHF1aXJpZG9zHwZnHwdnHwgFLC9hbHVtbm9zL3NhYmVyZXMvY2FsaWZpY2FjaW9uZXNfc2FiZXJlcy5hc3B4HwlnZBQrAAIWEB8CBRZDdXJzb3MgZGUgUmVjdXBlcmFjaW9uHwMFFkN1cnNvcyBkZSBSZWN1cGVyYWNpb24fBAUiL0FsdW1ub3MvUmVjdXBlcmFjaW9uL0RFRkFVTFQuQVNQWB8FBRZDdXJzb3MgZGUgUmVjdXBlcmFjaW9uHwZnHwdnHwgFIi9hbHVtbm9zL3JlY3VwZXJhY2lvbi9kZWZhdWx0LmFzcHgfCWcUKwACBQMwOjAUKwACFhAfAgUgSW5zY3JpYmlyIEN1cnNvcyBkZSBSZWN1cGVyYWNpb24fAwUgSW5zY3JpYmlyIEN1cnNvcyBkZSBSZWN1cGVyYWNpb24fBAUzL0FsdW1ub3MvUmVjdXBlcmFjaW9uL0luc2NyaXBjaW9uX1JlY3VwZXJhY2lvbi5hc3B4HwUFIEluc2NyaWJpciBDdXJzb3MgZGUgUmVjdXBlcmFjaW9uHwZnHwdnHwgFMy9hbHVtbm9zL3JlY3VwZXJhY2lvbi9pbnNjcmlwY2lvbl9yZWN1cGVyYWNpb24uYXNweB8JZ2QUKwACFhAfAgUHVHV0b3Jlcx8DBQdUdXRvcmVzHwQFHS9BbHVtbm9zL1R1dG9yZXMvRGVmYXVsdC5hc3B4HwUFEERhdG9zIGRlIFR1dG9yaWEfBmcfB2cfCAUdL2FsdW1ub3MvdHV0b3Jlcy9kZWZhdWx0LmFzcHgfCWcUKwAEBQswOjAsMDoxLDA6MhQrAAIWEB8CBQxUdXRvciBBY3R1YWwfAwUMVHV0b3IgQWN0dWFsHwQFIS9BbHVtbm9zL3R1dG9yZXMvRGF0b3NfVHV0b3IuYXNweB8FBR9EYXRvcyBkZWwgUHJvZmVzb3IgVHV0b3IgQWN0dWFsHwZnHwdnHwgFIS9hbHVtbm9zL3R1dG9yZXMvZGF0b3NfdHV0b3IuYXNweB8JZ2QUKwACFhAfAgULQ29tZW50YXJpb3MfAwULQ29tZW50YXJpb3MfBAUhL0FsdW1ub3MvdHV0b3Jlcy9jb21lbnRhcmlvcy5hc3B4HwUFLkNvbWVudGFyaW9zIHJlYWxpemFkb3MgcG9yIGVsIHR1dG9yIGRlbCBhbHVtbm8fBmcfB2cfCAUhL2FsdW1ub3MvdHV0b3Jlcy9jb21lbnRhcmlvcy5hc3B4HwlnZBQrAAIWEB8CBQtFdmFsdWFjacOzbh8DBQtFdmFsdWFjacOzbh8EBSgvQWx1bW5vcy90dXRvcmVzL0V2YWx1YWNpb25fVHV0b3Jlcy5hc3B4HwUFHUV2YWx1YWNpw7NuIGFsIHByb2Zlc29yIHR1dG9yHwZnHwdnHwgFKC9hbHVtbm9zL3R1dG9yZXMvZXZhbHVhY2lvbl90dXRvcmVzLmFzcHgfCWdkFCsAAhYQHwIFE0V2YWx1YWNpb24gUHJvZmVzb3IfAwUTRXZhbHVhY2lvbiBQcm9mZXNvch8EBSgvQWx1bW5vcy9FdmFsdWFjaW9uX0RvY2VudGUvRGVmYXVsdC5hc3B4HwUFE0RhdG9zIGRlIEV2YWx1YWNpb24fBmcfB2cfCAUoL2FsdW1ub3MvZXZhbHVhY2lvbl9kb2NlbnRlL2RlZmF1bHQuYXNweB8JZxQrAAIFAzA6MBQrAAIWEB8CBQtFdmFsdWFjacOzbh8DBQtFdmFsdWFjacOzbh8EBS8vQWx1bW5vcy9FdmFsdWFjaW9uX2RvY2VudGUvY2FsaWZpY2FfcHJvZmUuYXNweB8FBRVFdmFsdWFjaW9uIFByb2Zlc29yZXMfBmcfB2cfCAUvL2FsdW1ub3MvZXZhbHVhY2lvbl9kb2NlbnRlL2NhbGlmaWNhX3Byb2ZlLmFzcHgfCWdkFCsAAhYQHwIFD0NvcnJlbyBwZXJzb25hbB8DBQ9Db3JyZW8gcGVyc29uYWwfBAUiL0FsdW1ub3MvQ2FtYmlvQ29ycmVvUGVyc29uYWwuYXNweB8FBRlDYW1iaW8gZGUgY29ycmVvIHBlcnNvbmFsHwZnHwdnHwgFIi9hbHVtbm9zL2NhbWJpb2NvcnJlb3BlcnNvbmFsLmFzcHgfCWdkFCsAAhYQHwIFD0NsYXZlIGRlIGFjY2Vzbx8DBQ9DbGF2ZSBkZSBhY2Nlc28fBAUaL0FsdW1ub3MvY2FtYmlhX2NsYXZlLmFzcHgfBQUfQ2FtYmlvIGRlIENvbnRyYXNlw7FhIGRlIGFjY2Vzbx8GZx8HZx8IBRovYWx1bW5vcy9jYW1iaWFfY2xhdmUuYXNweB8JZ2RkAgoPZBYCAgMPFgIeB1Zpc2libGVoZBgDBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUpY3RsMDAkbGVmdENvbHVtbiRMb2dpblN0YXR1c1Nlc3Npb24kY3RsMDEFKWN0bDAwJGxlZnRDb2x1bW4kTG9naW5TdGF0dXNTZXNzaW9uJGN0bDAzBQ1jdGwwMCRzdWJNZW51Dw9kBRlEYXRvcyBhY2Fkw6ltaWNvc1xLw6FyZGV4ZAUOY3RsMDAkbWFpbm1lbnUPD2QFDkluaWNpb1xBbHVtbm9zZMq43p6tDcKB7gpVJShd/pFLFTfE">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./modificado_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./modificado_files/WebResource(1).axd" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9D949691">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgK447WDCQLui87GCPa1NHAWvCRddHcT0WBKHvu/uJam">
+</div>
+		<div id="wrapper">
+			<div id="header">
+			
+				<div id="logo">
+					<a id="ctl00_lnkHome" title="Página principal" href="https://www.saes.esfm.ipn.mx/Default.aspx" style="display:inline-block;height:75%;width:75%;"><img title="Página principal" src="./modificado_files/Poli_XCH.png" alt="[Home]" style="border-width:0px;"></a>
+				</div>
+				<div id="banner" style="font-weight: bold; font-size: small; color: maroon; font-family: Tahoma; font-variant: small-caps; right: 139px; top: 3px; text-align: center; width: 720px;">
+					
+					<br>
+					ESCUELA SUPERIOR DE FISICA Y MATEMATICAS			
+                    <br>
+                    
+				</div>
+				<div id="search">
+                   <table>
+                   <tbody><tr>
+                       <td rowspan="2">
+                       <img id="ctl00_LogoEscuela" src="./modificado_files/33.png" alt="Escuela" style="height:60px;width:60px;border-width:0px;">
+                       </td>
+                   <td>
+                        <a id="ctl00_Correo" href="https://www.saes.esfm.ipn.mx/#"><img src="./modificado_files/email.png" alt="Email" style="border-width:0px;"></a>&nbsp;
+                    </td>
+                   </tr>
+                   <tr>
+                   <td>
+                        <a id="ctl00_Mapa" href="https://www.saes.esfm.ipn.mx/Mapa.aspx"><img src="./modificado_files/mapa.png" alt="Mapa" style="border-width:0px;"></a>&nbsp;</td>
+                   </tr>
+                   </tbody></table>
+                    </div>
+			</div>
+			<div id="mainnav">
+				
+				<a href="https://www.saes.esfm.ipn.mx/Alumnos/boleta/kardex.aspx#ctl00_mainmenu_SkipLink"><img alt="Omitir vínculos de navegación" src="./modificado_files/WebResource(2).axd" width="0" height="0" style="border-width:0px;"></a><table id="ctl00_mainmenu" class="ctl00_mainmenu_5 ctl00_mainmenu_2" cellpadding="0" cellspacing="0" border="0">
+	<tbody><tr>
+		<td onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Inicio" id="ctl00_mainmenun0"><table class="item ctl00_mainmenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;"><a class="ctl00_mainmenu_1 item ctl00_mainmenu_3" href="https://www.saes.esfm.ipn.mx/default.aspx" style="border-style:none;font-size:1em;">Inicio</a></td>
+			</tr>
+		</tbody></table></td><td style="width:0px;"></td><td><table border="0" cellpadding="0" cellspacing="0" width="100%" class="ctl00_mainmenu_5">
+			<tbody><tr>
+				<td style="width:0px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Alumnos" id="ctl00_mainmenun1"><table class="item ctl00_mainmenu_4 selected ctl00_mainmenu_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;"><a class="ctl00_mainmenu_1 item ctl00_mainmenu_3 selected ctl00_mainmenu_6" href="https://www.saes.esfm.ipn.mx/Alumnos/default.aspx" style="border-style:none;font-size:1em;">Alumnos</a></td>
+					</tr>
+				</tbody></table></td><td style="width:0px;"></td><td style="width:0px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Académica" id="ctl00_mainmenun2"><table class="item ctl00_mainmenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;"><a class="ctl00_mainmenu_1 item ctl00_mainmenu_3" href="https://www.saes.esfm.ipn.mx/Academica/default.aspx" style="border-style:none;font-size:1em;">Académica</a></td>
+					</tr>
+				</tbody></table></td><td style="width:0px;"></td><td style="width:0px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Reglamento" id="ctl00_mainmenun3"><table class="item ctl00_mainmenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;"><a class="ctl00_mainmenu_1 item ctl00_mainmenu_3" href="https://www.saes.esfm.ipn.mx/Reglamento/Default.aspx" style="border-style:none;font-size:1em;">Reglamento</a></td>
+					</tr>
+				</tbody></table></td><td style="width:0px;"></td><td style="width:0px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Ayuda" id="ctl00_mainmenun4"><table class="item ctl00_mainmenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;"><a class="ctl00_mainmenu_1 item ctl00_mainmenu_3" href="https://www.saes.esfm.ipn.mx/Ayuda/Ayuda.aspx" style="border-style:none;font-size:1em;">Ayuda</a></td>
+					</tr>
+				</tbody></table></td><td style="width:0px;"></td><td style="width:0px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Recuperar la Contraseña de acceso al SAES" id="ctl00_mainmenun5"><table class="item ctl00_mainmenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;"><a class="ctl00_mainmenu_1 item ctl00_mainmenu_3" href="https://www.saes.esfm.ipn.mx/SendEmail/RecuperaPass.aspx" style="border-style:none;font-size:1em;">Recuperar Contraseña</a></td>
+					</tr>
+				</tbody></table></td><td style="width:0px;"></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><a id="ctl00_mainmenu_SkipLink"></a>			
+			</div>
+															
+			<div id="contentwrapper">
+				<div id="floatwrapper">
+					<div id="centercolumn">
+						<div id="breadcrumbs">
+							<span id="ctl00_smPath"><a href="https://www.saes.esfm.ipn.mx/Alumnos/boleta/kardex.aspx#ctl00_smPath_SkipLink"><img alt="Omitir vínculos de navegación" height="0" width="0" src="./modificado_files/WebResource(2).axd" style="border-width:0px;"></a><span><a title="Inicio" href="https://www.saes.esfm.ipn.mx/default.aspx">Inicio</a></span><span>&nbsp;»&nbsp;</span><span><a title="Alumnos" href="https://www.saes.esfm.ipn.mx/Alumnos/default.aspx">Alumnos</a></span><span>&nbsp;»&nbsp;</span><span><a title="Muestra tu información académica" href="https://www.saes.esfm.ipn.mx/Alumnos/boleta/default.aspx">Datos académicos</a></span><span>&nbsp;»&nbsp;</span><span>Kárdex</span><a id="ctl00_smPath_SkipLink"></a></span>
+						</div>
+						<div id="copy">
+							
+
+<!--
+	Desarrollador:		    Ing. Ramon Alejandro Quiroz Quiroz
+	Fecha:			        10 Diciembre 2008
+	Ultima Modificación:	11 Diciembre 2008
+	Descripcion:		    Pagina que visualiza la situcaion academica del alumno materias reprobadas, adeudadas y  desfasadas
+-->
+    <div class="container">
+        <table width="100%">
+            <tbody><tr>
+                <td colspan="3">
+                    <br>
+                    <span id="ctl00_mainCopy_Lbl_Generales"><center>    <table width="100%">        <tbody><tr>            <td rowspan="2" align="center">                <img src="./modificado_files/Poli_XCH(1).png" alt="IPN">            </td>            <td align="center">                <b>ESCUELA SUPERIOR DE FISICA Y MATEMATICAS</b>            </td>            <td rowspan="2" align="center">                <img src="./modificado_files/33(1).png" alt="Escuela" height="60" width="60">            </td>        </tr>        <tr>            <td align="center">                <b></b>            </td>        </tr>    </tbody></table></center></span>
+                    <br>
+                </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <br>
+        <div id="ctl00_mainCopy_Panel1" style="height:400px;overflow-y:scroll;">
+	
+            <table width="95%">
+                <tbody><tr>
+                    <td colspan="3">
+                        <br>
+                        <span id="ctl00_mainCopy_Lbl_Nombre">    <table>        <tbody><tr>            <td>                <b>BOLETA: </b>            </td>            <td>                2021330183            </td>        </tr>        <tr>            <td>                <b>NOMBRE: </b>            </td>            <td>                JAFET ALEXIS GUTIERREZ RANGEL            </td>        </tr>    </tbody></table></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Carrera: </b><span id="ctl00_mainCopy_Lbl_Carrera">LICENCIATURA EN MATEMÁTICA ALGORÍTMICA</span>
+                    </td>
+                    <td>
+                        <b>Plan: </b><span id="ctl00_mainCopy_Lbl_Plan">20</span>
+                    </td>
+                    <td>
+                        <b>Promedio: </b><span id="ctl00_mainCopy_Lbl_Promedio">6.11</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <br>
+                        <span id="ctl00_mainCopy_Label1">Este documento es solamente informativo y carece de cualquier validéz oficial</span>
+                    </td>
+                </tr>
+            </tbody></table>
+            <br>
+            <span id="ctl00_mainCopy_Lbl_Kardex"><style>
+			                  table.bottomBorder{background-color:WhiteSmoke;font-size:xx-small;text-align:center;border-collapse:collapse;}
+							  table.bottomBorder td {border-bottom: 1px solid TEAL;padding:1px;}
+							</style><center><table width="100%" class="bottomBorder"><tbody><tr><td colspan="6" style="background-color: Maroon; font-size: x-small; font-weight: bold; color: White; text-align: center">PRIMER SEMESTRE</td></tr><tr style="background-color: WhiteSmoke; font-size: xx-small; text-align: center; font-weight: bold;"><td width="10px">Clave</td><td width="150px">Materia</td><td width="40px">Fecha</td><td width="10px">Periodo</td><td width="10px">Forma Eval.</td><td width="10px">Calificacion</td></tr><tr><td>A101</td><td align="left">INTRODUCCIÓN AL CÁLCULO</td><td>Feb  2 2021</td><td>21/1</td><td>ORD</td><td>7</td></tr><tr><td>A102</td><td align="left">ÁLGEBRA SUPERIOR</td><td>Feb  2 2021</td><td>21/1</td><td>ORD</td><td>6</td></tr><tr><td>A103</td><td align="left">FUNDAMENTOS DE PROGRAMACIÓN</td><td>Feb  2 2021</td><td>21/1</td><td>ORD</td><td>9</td></tr><tr><td>A104</td><td align="left">PENSAMIENTO MATEMÁTICO</td><td>Feb  2 2021</td><td>21/1</td><td>ORD</td><td>10</td></tr><tr><td>A105</td><td align="left">GEOMETRÍA</td><td>Feb  2 2021</td><td>21/1</td><td>ORD</td><td>6</td></tr><tr><td>A106</td><td align="left">COMUNICACIÓN ASERTIVA</td><td>Feb  2 2021</td><td>21/1</td><td>ORD</td><td>8</td></tr></tbody></table><br></center><style>
+			                  table.bottomBorder{background-color:WhiteSmoke;font-size:xx-small;text-align:center;border-collapse:collapse;}
+							  table.bottomBorder td {border-bottom: 1px solid TEAL;padding:1px;}
+							</style><center><table width="100%" class="bottomBorder"><tbody><tr><td colspan="6" style="background-color: Maroon; font-size: x-small; font-weight: bold; color: White; text-align: center">SEGUNDO SEMESTRE</td></tr><tr style="background-color: WhiteSmoke; font-size: xx-small; text-align: center; font-weight: bold;"><td width="10px">Clave</td><td width="150px">Materia</td><td width="40px">Fecha</td><td width="10px">Periodo</td><td width="10px">Forma Eval.</td><td width="10px">Calificacion</td></tr><tr><td>A201</td><td align="left">CÁLCULO</td><td>Jul  5 2021</td><td>21/2</td><td>ETS</td><td>8</td></tr><tr><td>A202</td><td align="left">ÁLGEBRA LINEAL</td><td>Ago 10 2021</td><td>21/2</td><td>ETS</td><td>6</td></tr><tr><td>A203</td><td align="left">PARADIGMAS DE PROGRAMACIÓN</td><td>Jun 29 2021</td><td>21/2</td><td>ORD</td><td>7</td></tr><tr><td>A204</td><td align="left">CONSTRUCCIÓN MATEMÁTICA</td><td>Jun 29 2021</td><td>21/2</td><td>ORD</td><td>7</td></tr><tr><td>A205</td><td align="left">PROBABILIDAD</td><td>Jun 29 2021</td><td>21/2</td><td>EXT</td><td>6</td></tr><tr><td>A206</td><td align="left">RESOLUCIÓN DE PROBLEMAS COMPLEJOS</td><td>Jun 29 2021</td><td>21/2</td><td>ORD</td><td>6</td></tr></tbody></table><br></center><style>
+			                  table.bottomBorder{background-color:WhiteSmoke;font-size:xx-small;text-align:center;border-collapse:collapse;}
+							  table.bottomBorder td {border-bottom: 1px solid TEAL;padding:1px;}
+							</style><center><table width="100%" class="bottomBorder"><tbody><tr><td colspan="6" style="background-color: Maroon; font-size: x-small; font-weight: bold; color: White; text-align: center">TERCER SEMESTRE</td></tr><tr style="background-color: WhiteSmoke; font-size: xx-small; text-align: center; font-weight: bold;"><td width="10px">Clave</td><td width="150px">Materia</td><td width="40px">Fecha</td><td width="10px">Periodo</td><td width="10px">Forma Eval.</td><td width="10px">Calificacion</td></tr><tr><td>A301</td><td align="left">CÁLCULO MULTIVARIABLE</td><td>Ene  7 2022</td><td>22/1</td><td>ORD</td><td>9</td></tr><tr><td>A302</td><td align="left">ÁLGEBRA LINEAL AVANZADA</td><td>Ene  7 2022</td><td>22/1</td><td>ORD</td><td>7</td></tr><tr><td>A303</td><td align="left">ANÁLISIS DE ALGORITMOS</td><td>Ene  7 2022</td><td>22/1</td><td>ORD</td><td>7</td></tr><tr><td>A304</td><td align="left">TEORÍA DE GRÁFICAS</td><td>Ene  7 2022</td><td>22/1</td><td>ORD</td><td>6</td></tr><tr><td>A305</td><td align="left">ESTADÍSTICA</td><td>Jun 23 2022</td><td>22/2</td><td>REC</td><td>0</td></tr><tr><td>A306</td><td align="left">TOMA DE DECISIONES BASADAS EN DATOS</td><td>Ene  7 2022</td><td>22/1</td><td>ORD</td><td>6</td></tr></tbody></table><br></center><style>
+			                  table.bottomBorder{background-color:WhiteSmoke;font-size:xx-small;text-align:center;border-collapse:collapse;}
+							  table.bottomBorder td {border-bottom: 1px solid TEAL;padding:1px;}
+							</style><center><table width="100%" class="bottomBorder"><tbody><tr><td colspan="6" style="background-color: Maroon; font-size: x-small; font-weight: bold; color: White; text-align: center">CUARTO SEMESTRE</td></tr><tr style="background-color: WhiteSmoke; font-size: xx-small; text-align: center; font-weight: bold;"><td width="10px">Clave</td><td width="150px">Materia</td><td width="40px">Fecha</td><td width="10px">Periodo</td><td width="10px">Forma Eval.</td><td width="10px">Calificacion</td></tr><tr><td>A401</td><td align="left">ANÁLISIS MATEMÁTICO</td><td>Jun 23 2022</td><td>22/2</td><td>EXT</td><td>6</td></tr><tr><td>A402</td><td align="left">TEORÍA DE CONJUNTOS</td><td>Jun 23 2022</td><td>22/2</td><td>EXT</td><td>6</td></tr><tr><td>A403</td><td align="left">MÉTODOS NUMÉRICOS</td><td>Jun 23 2022</td><td>22/2</td><td>EXT</td><td>8</td></tr><tr><td>A404</td><td align="left">ECUACIONES DINÁMICAS</td><td>Jun 23 2022</td><td>22/2</td><td>ORD</td><td>8</td></tr><tr><td>A405</td><td align="left">MODELOS ESTOCÁSTICOS</td><td>Jun 23 2022</td><td>22/2</td><td>ORD</td><td>7</td></tr><tr><td>A406</td><td align="left">ÉTICA Y RESPONSABILIDAD SOCIAL</td><td>Jun 23 2022</td><td>22/2</td><td>EXT</td><td>6</td></tr></tbody></table><br></center><style>
+			                  table.bottomBorder{background-color:WhiteSmoke;font-size:xx-small;text-align:center;border-collapse:collapse;}
+							  table.bottomBorder td {border-bottom: 1px solid TEAL;padding:1px;}
+							</style><center><table width="100%" class="bottomBorder"><tbody><tr><td colspan="6" style="background-color: Maroon; font-size: x-small; font-weight: bold; color: White; text-align: center">QUINTO SEMESTRE</td></tr><tr style="background-color: WhiteSmoke; font-size: xx-small; text-align: center; font-weight: bold;"><td width="10px">Clave</td><td width="150px">Materia</td><td width="40px">Fecha</td><td width="10px">Periodo</td><td width="10px">Forma Eval.</td><td width="10px">Calificacion</td></tr><tr><td>A501</td><td align="left">TEORÍA DE LA MEDIDA EN FINANZAS</td><td>Feb  1 2023</td><td>23/1</td><td>ORD</td><td>8</td></tr><tr><td>A502</td><td align="left">ÁLGEBRA ABSTRACTA</td><td>Feb  1 2023</td><td>23/1</td><td>ORD</td><td>8</td></tr><tr><td>A503</td><td align="left">OPTIMIZACIÓN</td><td>Feb  1 2023</td><td>23/1</td><td>ORD</td><td>7</td></tr><tr><td>A504</td><td align="left">FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL</td><td>Feb  1 2023</td><td>23/1</td><td>EXT</td><td>8</td></tr><tr><td>A505</td><td align="left">MODELOS ESTADÍSTICOS</td><td>Feb  1 2023</td><td>23/1</td><td>ORD</td><td>9</td></tr></tbody></table><br></center><center><table width="100%" class="bottomBorder"><tbody><tr><td colspan="6" style="background-color: Maroon; font-size: x-small; font-weight: bold; color: White; text-align: center">SEXTO SEMESTRE</td></tr><tr style="background-color: WhiteSmoke; font-size: xx-small; text-align: center; font-weight: bold;"><td width="10px">Clave</td><td width="150px">Materia</td><td width="40px">Fecha</td><td width="10px">Periodo</td><td width="10px">Forma Eval.</td><td width="10px">Calificacion</td></tr><tr><td>A601</td><td align="left">NEGOCIACIÓN DE ACTIVOS FINANCIEROS</td><td>Jul 14 2023</td><td>23/2</td><td>ORD</td><td>8</td></tr><tr><td>A602</td><td align="left">TEORÍA DEL CONTROL DISCRETO</td><td>Jul 14 2023</td><td>23/2</td><td>ORD</td><td>7</td></tr><tr><td>A603</td><td align="left">TEORÍA COMPUTACIONAL</td><td>Jul 14 2023</td><td>23/2</td><td>EXT</td><td>7</td></tr><tr><td>A604</td><td align="left">CRIPTOLOGÍA</td><td>Jul 14 2023</td><td>23/2</td><td>ORD</td><td>8</td></tr><tr><td>A605</td><td align="left">APRENDIZAJE PROFUNDO</td><td>Jul 14 2023</td><td>23/2</td><td>ORD</td><td>8</td></tr></tbody></table><br></center></span>
+            <br>
+            <table width="95%">
+                <tbody><tr>
+                    <td colspan="3">
+                        <span id="ctl00_mainCopy_Label6">Este documento es solamente informativo y carece de cualquier validéz oficial</span>
+                    </td>
+                </tr>
+            </tbody></table>
+            <br>
+        
+</div>
+    </div>   
+ 
+						</div>
+					</div>
+					<div id="leftcolumn">
+						<div id="leftcolcontainer">
+							<div id="subnav">	&nbsp;
+								<a href="https://www.saes.esfm.ipn.mx/Alumnos/boleta/kardex.aspx#ctl00_subMenu_SkipLink"><img alt="Omitir vínculos de navegación" src="./modificado_files/WebResource(2).axd" width="0" height="0" style="border-width:0px;"></a><table id="ctl00_subMenu" class="ctl00_subMenu_5 ctl00_subMenu_2" cellpadding="0" cellspacing="0" border="0" style="font-size:11px;">
+	<tbody><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Datos Generales" id="ctl00_subMenun0">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/info_alumnos/default.aspx" style="border-style:none;font-size:1em;">Datos Personales</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr>
+		<td><table border="0" cellpadding="0" cellspacing="0" width="100%" class="ctl00_subMenu_5">
+			<tbody><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Información Personal" id="ctl00_subMenun1">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/info_alumnos/Datos_Alumno.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Datos Personales</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Información Personal" id="ctl00_subMenun2">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/info_alumnos/DatosAlumnosMedicos.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Datos Médicos</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Información Personal" id="ctl00_subMenun3">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/info_alumnos/DatosAlumnosDeportivos.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Datos Deportivos</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Documentos del proceso de admisión" id="ctl00_subMenun4">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/info_alumnos/Documentos_Admision.aspx" style="border-style:none;font-size:1em;">Documentos Admisión</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Página para solicitar tramites probatorios de escolaridad" id="ctl00_subMenun5">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Tramites/Default.aspx" style="border-style:none;font-size:1em;">Tramites</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr>
+		<td><table border="0" cellpadding="0" cellspacing="0" width="100%" class="ctl00_subMenu_5">
+			<tbody><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Página para solicitar tramites probatorios de escolaridad" id="ctl00_subMenun6">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Tramites/Solicitud_Tramite_Alumno.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Solicitud</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Página para dar seguimiento a tus tramites probatorios de escolaridad" id="ctl00_subMenun7">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Tramites/Seguimiento_Tramite_Alumno.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Seguimiento</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Muestra tu información académica" id="ctl00_subMenun8">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/boleta/default.aspx" style="border-style:none;font-size:1em;">Datos académicos</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr>
+		<td><table border="0" cellpadding="0" cellspacing="0" width="100%" class="ctl00_subMenu_5">
+			<tbody><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Historial Académico" id="ctl00_subMenun9">
+				<td><table class="item ctl00_subMenu_4 selected ctl00_subMenu_10" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3 selected ctl00_subMenu_9" href="https://www.saes.esfm.ipn.mx/Alumnos/boleta/kardex.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Kárdex</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Indicadores académicos" id="ctl00_subMenun10">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/boleta/Estado_Alumno.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Estado General</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Datos generales" id="ctl00_subMenun11">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Dictamenes/Candidato.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Solicitud Dictamen</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Información Personal" id="ctl00_subMenun12">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Dictamenes/respuesta_dictamen.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Dictamen</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Informacion del periodo escolar en curso" id="ctl00_subMenun13">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Informacion_semestral/default.aspx" style="border-style:none;font-size:1em;">Inscripción Actual</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr>
+		<td><table border="0" cellpadding="0" cellspacing="0" width="100%" class="ctl00_subMenu_5">
+			<tbody><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Horario de Clases" id="ctl00_subMenun14">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Informacion_semestral/Horario_Alumno.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Horario</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Calificaciones de los departamentales" id="ctl00_subMenun15">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Informacion_semestral/calificaciones_sem.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Calificaciones</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Reinscripciones" id="ctl00_subMenun16">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Reinscripciones/default.aspx" style="border-style:none;font-size:1em;">Reinscripciones</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr>
+		<td><table border="0" cellpadding="0" cellspacing="0" width="100%" class="ctl00_subMenu_5">
+			<tbody><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Cita de Reinscripcion" id="ctl00_subMenun17">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Reinscripciones/fichas_reinscripcion.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Cita de Reinscripcion</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Reinscripcion" id="ctl00_subMenun18">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Reinscripciones/reinscribir.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Reinscripcion</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Comprobante" id="ctl00_subMenun19">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Reinscripciones/Comprobante_Horario.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Comprobante</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="E.T.S" id="ctl00_subMenun20">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/ETS/default.aspx" style="border-style:none;font-size:1em;">ETS</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr>
+		<td><table border="0" cellpadding="0" cellspacing="0" width="100%" class="ctl00_subMenu_5">
+			<tbody><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Inscribir ETS" id="ctl00_subMenun21">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/ETS/inscripcion_ets.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Inscribir ETS</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Calificacion ETS" id="ctl00_subMenun22">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/ETS/calificaciones_ets.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Calificaciones</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Saberes Previamente Adquiridos" id="ctl00_subMenun23">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Saberes/DEFAULT.ASPX" style="border-style:none;font-size:1em;">Saberes Previamente Adquiridos</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr>
+		<td><table border="0" cellpadding="0" cellspacing="0" width="100%" class="ctl00_subMenu_5">
+			<tbody><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Inscribir Saberes Previamente Adquiridos" id="ctl00_subMenun24">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Saberes/Inscripcion_Saberes.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Inscribir Saberes Previamente Adquiridos</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Calificaciones Saberes Previamente Adquiridos" id="ctl00_subMenun25">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Saberes/calificaciones_saberes.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Calificaciones</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Cursos de Recuperacion" id="ctl00_subMenun26">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Recuperacion/DEFAULT.ASPX" style="border-style:none;font-size:1em;">Cursos de Recuperacion</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr>
+		<td><table border="0" cellpadding="0" cellspacing="0" width="100%" class="ctl00_subMenu_5">
+			<tbody><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Inscribir Cursos de Recuperacion" id="ctl00_subMenun27">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Recuperacion/Inscripcion_Recuperacion.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Inscribir Cursos de Recuperacion</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Datos de Tutoria" id="ctl00_subMenun28">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Tutores/Default.aspx" style="border-style:none;font-size:1em;">Tutores</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr>
+		<td><table border="0" cellpadding="0" cellspacing="0" width="100%" class="ctl00_subMenu_5">
+			<tbody><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Datos del Profesor Tutor Actual" id="ctl00_subMenun29">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/tutores/Datos_Tutor.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Tutor Actual</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Comentarios realizados por el tutor del alumno" id="ctl00_subMenun30">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/tutores/comentarios.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Comentarios</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Evaluación al profesor tutor" id="ctl00_subMenun31">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/tutores/Evaluacion_Tutores.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Evaluación</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Datos de Evaluacion" id="ctl00_subMenun32">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Evaluacion_Docente/Default.aspx" style="border-style:none;font-size:1em;">Evaluacion Profesor</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr>
+		<td><table border="0" cellpadding="0" cellspacing="0" width="100%" class="ctl00_subMenu_5">
+			<tbody><tr style="height:0px;">
+				<td></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Evaluacion Profesores" id="ctl00_subMenun33">
+				<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/Evaluacion_docente/califica_profe.aspx" style="border-style:none;font-size:1em;margin-left:20px;">Evaluación</a></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr style="height:0px;">
+				<td></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Cambio de correo personal" id="ctl00_subMenun34">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/CambioCorreoPersonal.aspx" style="border-style:none;font-size:1em;">Correo personal</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr><tr onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Cambio de Contraseña de acceso" id="ctl00_subMenun35">
+		<td><table class="item ctl00_subMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tbody><tr>
+				<td style="white-space:nowrap;width:100%;"><a class="ctl00_subMenu_1 item ctl00_subMenu_3" href="https://www.saes.esfm.ipn.mx/Alumnos/cambia_clave.aspx" style="border-style:none;font-size:1em;">Clave de acceso</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr><tr style="height:0px;">
+		<td></td>
+	</tr>
+</tbody></table><a id="ctl00_subMenu_SkipLink"></a>
+							</div>
+							
+								
+                                <br>
+                                <div class="sidebarcontainer" style="width: 125px; height: 40%">
+                                    <div id="ctl00_leftColumn_LogOut">
+                                        <loggedintemplate>
+                                            <a id="ctl00_leftColumn_LoginStatusSession" href="javascript:__doPostBack(&#39;ctl00$leftColumn$LoginStatusSession$ctl00&#39;,&#39;&#39;)" style="display:inline-block;width:110px;">Cerrar sesión</a>
+                                            <span id="ctl00_leftColumn_LoginNameSession" style="display:inline-block;color:#FF8000;width:116px;">2021330183</span>
+                                        </loggedintemplate>
+                                    </div>
+                                    
+                                </div>
+							
+                            &nbsp;
+						</div>
+					</div>
+				</div>
+				<div id="rightcolumn">
+					<div id="rightcolcontainer">
+						
+							
+                            
+                            <br>
+                            <div class="sidebarcontainer" style="font-size:smaller">
+                                <h4>
+                                    Accesos rápidos</h4>
+                               
+		                        <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+		                        <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+		                        <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+
+                                
+
+                                <ul>
+                                    <li><a href="https://www.saes.esfm.ipn.mx/Academica/agenda_escolar.aspx" roles="ALUMNOS,Profesores,Profesores_Posgrado,ALUMNOS_BAJA,ALUMNOS_EGRESADOS,Alumnos_Posgrado,EJECUTIVOS,CEC,EVALUACION,ESTRUCTURA,CAMBIO,CATALOGOS,Padres,TUTORES,COORDINADOR_TUTORES,UPEV,ESTADISTICAS" title="Agenda escolar." style="font-size:smaller"> &gt;&gt; Agenda escolar </a></li>
+                                    <li><a href="https://www.saes.esfm.ipn.mx/Academica/horarios.aspx" roles="ALUMNOS,Profesores,Profesores_Posgrado,ALUMNOS_BAJA,ALUMNOS_EGRESADOS,Alumnos_Posgrado,EJECUTIVOS,CEC,EVALUACION,ESTRUCTURA,CAMBIO,CATALOGOS,Padres,TUTORES,COORDINADOR_TUTORES,UPEV,ESTADISTICAS" title="Explorar los horarios de clase." style="font-size:smaller"> &gt;&gt; Horarios de clase</a></li>
+                                    <li><a href="https://www.saes.esfm.ipn.mx/Academica/calendario_ets.aspx" roles="ALUMNOS,Profesores,Profesores_Posgrado,ALUMNOS_BAJA,ALUMNOS_EGRESADOS,Alumnos_Posgrado,EJECUTIVOS,CEC,EVALUACION,ESTRUCTURA,CAMBIO,CATALOGOS,Padres,TUTORES,COORDINADOR_TUTORES,UPEV,ESTADISTICAS" title="Explorar los horarios de ETS." style="font-size:smaller"> &gt;&gt; Horarios de ETS</a></li>
+                                </ul>
+                           
+		                        <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+		                        <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+		                        <!-- ++++++++++++++++++++++++++++++++++++++++++ -->                           
+                            
+                            </div>
+						
+					</div>
+				</div>
+				<div id="footer">
+					© 2008 SAES <a href="http://www.ipn.mx/" title="Instituto Politécnico Nacional" target="_blank">IPN</a> <a href="http://www.dae.ipn.mx/" title="Dirección de Administración Escolar" target="_blank">IPN-DAE</a></div>
+			</div>
+		</div>
+	
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_mainmenu_Data = new Object();
+ctl00_mainmenu_Data.disappearAfter = 500;
+ctl00_mainmenu_Data.horizontalOffset = 0;
+ctl00_mainmenu_Data.verticalOffset = 0;
+ctl00_mainmenu_Data.staticHoverClass = 'ctl00_mainmenu_9 hover';
+ctl00_mainmenu_Data.staticHoverHyperLinkClass = 'ctl00_mainmenu_8 hover';
+ctl00_mainmenu_Data.iframeUrl = '/WebResource.axd?d=QcrzqpJhznseZigQDP-bY9j-6m7TOHYanBY0A4vMEiJBqLPYHfoAXaUZ5gNBNh8mM0jA4l4x9BIEAaQkYQmtEv3RwZ41&t=637813275348717602';
+var ctl00_subMenu_Data = new Object();
+ctl00_subMenu_Data.disappearAfter = 500;
+ctl00_subMenu_Data.horizontalOffset = 0;
+ctl00_subMenu_Data.verticalOffset = 0;
+ctl00_subMenu_Data.hoverClass = 'ctl00_subMenu_16 hover';
+ctl00_subMenu_Data.hoverHyperLinkClass = 'ctl00_subMenu_15 hover';
+ctl00_subMenu_Data.staticHoverClass = 'ctl00_subMenu_14 hover';
+ctl00_subMenu_Data.staticHoverHyperLinkClass = 'ctl00_subMenu_13 hover';
+ctl00_subMenu_Data.iframeUrl = '/WebResource.axd?d=QcrzqpJhznseZigQDP-bY9j-6m7TOHYanBY0A4vMEiJBqLPYHfoAXaUZ5gNBNh8mM0jA4l4x9BIEAaQkYQmtEv3RwZ41&t=637813275348717602';
+//]]>
+</script>
+</form>
+
+
+</body></html>
